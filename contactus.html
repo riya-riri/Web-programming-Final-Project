@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="central.css">
+</head>
+<body>
+    <header>
+    <ul id = "NavigationBar">
+        <li class = "NavOptions"><img src="Images/NIJlogo.png" alt="NIJ logo" width="100" height="50"></li>
+        <li class = "NavOptions"><a href="index.html">Home</a></li>
+        <li class = "NavOptions"><a href="ourmission.html">Our Mission</a></li>
+        <li class = "NavOptions"><a href="events.html">Events</a></li>
+        <li class = "NavOptions"><a href="quiz.html">Quiz</a></li>
+        <li class = "NavOptions"><a href="contactus.html">Contact Us</a></li>
+    </ul>
+    <hr>
+    </header>
+    
+    <div id="contactus">
+        <h1>Contact NIJ</h1>
+        <p style="font-size: large; color: navy;">If you have any questions, feel free to send us a message !</p>
+        <form>
+            <label for="fname" class="forminput" style="font-size: x-large;">First Name:</label>
+            <input type="text" id="fname" name="fname" style="width: 300px; height: 30px; font-size: large;">
+        <br>
+        <br>
+            <label for="lname" class="forminput" style="font-size: x-large;">Last Name:</label>
+            <input type="text" id="lname" name="lname" style="width: 300px; height: 30px; font-size: large;">
+        <br>
+        <br>
+            <label for="message" class="forminput" style="font-size: x-large;">Message:</label>
+            <textarea id="message" name="message" style="width: 330px; height: 80px; font-size: large;"></textarea>
+        <br>
+        <br>
+            <label for="email" class="forminput" style="font-size: x-large;">Email:</label>
+            <input type="email" id="email" name="email" style="width: 300px; height: 30px; font-size: large;">
+        <br>
+        <br>
+        <br>
+            <button type="button" onclick="submitForm()" style="font-size: larger; height: 60px; width: 100px; border-radius: 15px; background-color: gainsboro; border-color: gainsboro;">Send</button>
+        </form>
+        <p id="messagesubmitted" style="font-size: larger; color: cadetblue;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<footer style="position: fixed; bottom: 0; left: 0; width: 100%; margin-top: 0px;">
+    <p>Follow us on Instagram: @eikei_nij</p>
+    <p>Copyright &copy; 2025 New In Japan (NIJ). All rights reserved.</p>
+    <p>Made by S24514J Khaing Myint Myat & S24507S Riya Chaudhary| May 27, 2026 | Final Project |</p>
+    <p>| Web Programming and Application Development | Prof. Ding</p>
+</footer>
+
+</html>

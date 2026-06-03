@@ -1,0 +1,116 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+    background-color:whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+#NavigationBar{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 0;
+    float: left;
+    background-color: #0e0d32;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.NavOptions{
+    float:left;
+    margin-left: 20px;
+    margin-top: 10px;
+    color:white;    
+}
+#intro{
+    margin: 20px;
+}
+
+h1,h2,h3{
+   text-align: center; 
+   font-size: 150%;
+}
+.para{
+    line-height: 2;
+    text-align: center;
+    margin: 40px;
+    font-size: 100%;
+}
+.upcoming-section{
+    margin: 0;
+    padding: 20px;
+}
+.upcoming-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #0e0d32; 
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 5px 5px lightgrey;
+}
+.upcoming-img{
+    min-width: 50px;
+    min-height: 100px;
+    border-radius: 8px;
+}
+.upcoming-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.upcoming-desc{
+    color: white;
+    padding: 25px;
+    align-content: center;
+}
+.upcoming-contact{
+    color: white;
+    padding: 40px;
+    align-content: center;
+}
+.pastevents-section{
+    margin: 0;
+    padding: 20px;
+}
+.pastevents-card{
+    display: grid;
+    grid-template-columns: 50% 33%;
+    grid-template-rows: auto;
+    background-color: white;
+    margin: 40px;
+    border-radius: 8px;
+}
+.pastevents-img{
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 8px;
+}
+.pastevents-img img{
+    width:100%;
+    height:100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.pastevents-desc{
+    padding: 20px;
+    align-content: center;
+}
+
+#closing {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 100%;
+}
+footer{
+    text-align: center;
+    background-color: #0e0d32;
+    color: white;
+    line-height: 1.5;
+    margin: 0;
+}

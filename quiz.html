@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizformat.css">
+</head>
+<body>
+    <header>
+    <ul id = "NavigationBar">
+        <li class = "NavOptions"><img src="Images/NIJlogo.png" alt="NIJ logo" width="100" height="50"></li>
+        <li class = "NavOptions"><a href="index.html">Home</a></li>
+        <li class = "NavOptions"><a href="ourmission.html">Our Mission</a></li>
+        <li class = "NavOptions"><a href="events.html">Events</a></li>
+        <li class = "NavOptions"><a href="quiz.html">Quiz</a></li>
+        <li class = "NavOptions"><a href="contactus.html">Contact Us</a></li>
+    </ul>
+    <hr>
+    </header>
+
+    <div id="quizblock">
+        <h1>Club Related Quiz:</h1>
+        <table>
+            <tr>
+                <td class="questionsegment">
+                        <h3>Who is the president of New In Japan Club?</h3>
+                        <ul>
+                            <li><button onclick = "wrongAnswer(this)">Cian</button>   <button onclick = "correctAnswer(this)">Chavvi</button></li>
+                            <li><button onclick = "wrongAnswer(this)">Mimi</button> <button onclick = "wrongAnswer(this)">Hay Thi</button></li>
+                        </ul>
+                </td>
+                <td class="questionsegment">
+                    <h3>When was the last Autumn BBQ held on?</h3>
+                    <ul>
+                        <li><button onclick = "wrongAnswer(this)">September 22, 2025 </button> <button onclick = "wrongAnswer(this)">October 2, 2025</button></li>
+                        <li><button onclick = "wrongAnswer(this)">September 28, 2025</button> <button onclick = "correctAnswer(this)">October 12, 2025</button></li>
+                    </ul>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="questionsegment">
+                    <h3>Who is the founding student of the NIJ club?</h3>
+                    <ul>
+                        <li><button onclick = "correctAnswer(this)">Shaxia</button> <button onclick = "wrongAnswer(this)">Francis</button></li>
+                        <li><button onclick = "wrongAnswer(this)">Tamba</button> <button onclick = "wrongAnswer(this)">Natalia</button></li>
+                    </ul>
+                </td>
+
+                <td class="questionsegment">
+                <h3>What is the instagram handle for NIJ club?</h3>
+                <ul>
+                    <li><button data-text="@NewInJapan" onmouseover="showHint(this)" onmouseout="hideHint(this)"  onclick = "wrongAnswer(this)">@NewInJapan</button> <button onclick = "correctAnswer(this)">@eikei_nij</button></li>
+                    <li><button data-text="@NIJ_eikei" onmouseover="showHint(this)" onmouseout="hideHint(this)"  onclick = "wrongAnswer(this)">@NIJ_eikei</button> <button  data-text="@EUH_nij" onmouseover="showHint(this)" onmouseout="hideHint(this)"  onclick = "wrongAnswer(this)">@EUH_nij</button></li>
+                </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="questionsegment">
+                <h3>How many nationalities do we have in the club?</h3>
+                <ul>
+                    <li><button onclick = "correctAnswer(this)">more than 10</button> <button onclick = "wrongAnswer(this)">only one</button></li>
+                    <li><button onclick = "wrongAnswer(this)">more than 5</button> <button onclick = "wrongAnswer(this)">less than 8</button></li>
+                </ul>
+                </td>
+
+                <td class="questionsegment">
+                    <h4 id="message">Thanks for taking the quiz :) ! </h4>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="scoreboard"><h3 id="rightscore-record">Total No. of Correct Answers Clicked : 0</h3></td>
+                <td class="scoreboard"><h3 id="wrongscore-record">Total No. of Wrong Answers Clicked : 0</h3></td>
+            </tr>
+        </table>
+            
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <hr>
+    <p>Follow us on Instagram: @eikei_nij</p>
+    <p>Copyright &copy; 2025 New In Japan (NIJ). All rights reserved.</p>
+    <p>Made by S24514J Khaing Myint Myat & S24507S Riya Chaudhary| May 27, 2026 | Final Project |</p>
+    <p>| Web Programming and Application Development | Prof. Ding</p>
+</footer>
+</html>
